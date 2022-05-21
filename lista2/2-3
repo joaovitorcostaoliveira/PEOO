@@ -1,0 +1,18 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+
+    
+    Console.WriteLine("Digite a nota do primeiro bimestre da disciplina:");
+    string nota1 = Console.ReadLine();
+    double N1 = double.Parse(nota1);
+    Console.WriteLine("Digite a nota do segundo bimestre da disciplina:");
+    string nota2 = Console.ReadLine();
+    double N2 = double.Parse(nota2);
+    double notafinal = ((N1*2)+(N2*3))/5;
+
+    Console.WriteLine("Média parcial = " + notafinal);
+  }
+}
