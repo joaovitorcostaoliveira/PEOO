@@ -1,0 +1,21 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+     Console.WriteLine("qual o X1 e Y1");
+    string x1 = Console.ReadLine();
+    string y1 = Console.ReadLine();
+    double X1 = double.Parse(x1);
+    double Y1 = double.Parse(y1);
+
+    Console.WriteLine("qual o X2 e Y2");
+    string x2 = Console.ReadLine();
+    string y2 = Console.ReadLine();
+    double X2 = double.Parse(x2);
+    double Y2 = double.Parse(y2);
+
+    double final = Math.Sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+      Console.WriteLine("produto = " + final);
+  }
+}
