@@ -1,0 +1,25 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+     Console.WriteLine("qual o numero de saidas?");
+    string a = Console.ReadLine();
+    string b= Console.ReadLine();
+    string c= Console.ReadLine();
+    double A = double.Parse(a);
+    double B = double.Parse(b);
+    double C = double.Parse(c);
+
+    double triangulo = A*C;
+      Console.WriteLine("TRIANGULO = " + triangulo);
+    double circulo = 3.14*(C*C);
+      Console.WriteLine("CIRCULO = " + circulo);
+    double trapezio = ((A+B)*C)/2;
+      Console.WriteLine("TRAPEZIO = " + trapezio);
+    double quadrado = B*B;
+      Console.WriteLine("QUADRADO = " + quadrado);
+    double retangulo = A*B;
+      Console.WriteLine("RETANGULO = " + retangulo);
+  }
+}
