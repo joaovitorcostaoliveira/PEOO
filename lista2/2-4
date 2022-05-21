@@ -1,0 +1,25 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+
+    
+    Console.WriteLine("base");
+    string Base = Console.ReadLine();
+    double B = double.Parse(Base);
+
+    
+    Console.WriteLine("altura");
+    string Altura = Console.ReadLine();
+    double J = double.Parse(Altura);
+
+    
+    double A = B*J;
+    Console.WriteLine("a area do retangulo é " + A);
+    double P = 2*(B+J);
+    Console.WriteLine("o perimetro do retangulo é " + P);
+    double D = Math.Sqrt((B*B)+(J*J));
+    Console.WriteLine("a diagonal do retangulo é " + D);
+  }
+}
