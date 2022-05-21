@@ -1,0 +1,17 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    Console.WriteLine("primeiro numero");
+    string Base = Console.ReadLine();
+    double B = double.Parse(Base);
+    
+    Console.WriteLine("primeiro numero");
+    string Mult = Console.ReadLine();
+    double M = double.Parse(Mult);
+
+    double produto = B*M;
+      Console.WriteLine("produto = " + produto);
+  }
+}
