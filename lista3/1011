@@ -1,0 +1,13 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    Console.WriteLine("Raio da esfera");
+    string Base = Console.ReadLine();
+    double B = double.Parse(Base);
+
+    double volume = (4/3.0)*3.14*(B*B*B);
+      Console.WriteLine("produto = " + volume);
+  }
+}
