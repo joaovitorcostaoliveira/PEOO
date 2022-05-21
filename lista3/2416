@@ -1,0 +1,16 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    Console.WriteLine("Numero de metros");
+    string Base = Console.ReadLine();
+    double B = double.Parse(Base);
+    Console.WriteLine("Numero de metros corridos");
+    string Mult = Console.ReadLine();
+    double M = double.Parse(Mult);
+
+    double final = (B % M);
+      Console.WriteLine("produto = " + final);
+  }
+}
