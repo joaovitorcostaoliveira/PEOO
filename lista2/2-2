@@ -1,0 +1,13 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    Console.WriteLine("qual seu nome?");
+    string nome = Console.ReadLine();
+    string[] nomes = nome.Split(' ');
+    Console.WriteLine("seja bem vindo ao c#, " + nomes[0]);
+
+        
+  }
+}
