@@ -1,0 +1,27 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    int i, totalRatos = 0, totalCoelhos = 0, totalSapos = 0, totalCobaias = 0;
+    int number = int.Parse(Console.ReadLine());
+    for(i = 1; i<=number; i++){
+      string qntd = Console.ReadLine();
+      string[] n = qntd.Split();
+      string animal = n[1];
+        if(animal == "C") totalCoelhos += int.Parse(n[0]);
+        else if(animal == "R") totalRatos += int.Parse(n[0]);
+        else if(animal == "S") totalSapos += int.Parse(n[0]);
+    }
+
+    totalCobaias += totalCoelhos + totalSapos + totalRatos;
+    Console.WriteLine($"total de cobaias: " + totalCobaias);
+    Console.WriteLine($"total de coelhos: " + totalCoelhos);
+    Console.WriteLine($"total de ratos: " + totalRatos);
+    Console.WriteLine($"total de sapos: " + totalSapos);
+    Console.WriteLine($"percentual de coelhos:  {totalCoelhos*100/totalCobaias}%");
+    Console.WriteLine($"percentual de ratos:  {totalRatos*100/totalCobaias}%");
+    Console.WriteLine($"percentual de sapos:  {totalSapos*100/totalCobaias}%");
+    
+  }
+}
