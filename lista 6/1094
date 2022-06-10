@@ -19,9 +19,9 @@ public class Program {
     Console.WriteLine($"total de coelhos: " + totalCoelhos);
     Console.WriteLine($"total de ratos: " + totalRatos);
     Console.WriteLine($"total de sapos: " + totalSapos);
-    Console.WriteLine($"percentual de coelhos:  {totalCoelhos*100/totalCobaias}%");
-    Console.WriteLine($"percentual de ratos:  {totalRatos*100/totalCobaias}%");
-    Console.WriteLine($"percentual de sapos:  {totalSapos*100/totalCobaias}%");
+    Console.WriteLine($"percentual de coelhos:  {totalCoelhos*100/totalCobaias:.00}%");
+    Console.WriteLine($"percentual de ratos:  {totalRatos*100/totalCobaias:.00}%");
+    Console.WriteLine($"percentual de sapos:  {totalSapos*100/totalCobaias:.00}%");
     
   }
 }
