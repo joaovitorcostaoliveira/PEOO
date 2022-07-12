@@ -1,0 +1,16 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    string[] irado = frase.Split();
+    int tamanho = irado.Length;
+    int cont = 0;
+    int contb = 0;
+    while(cont < contb){
+      contb = irado[cont].Length;
+      Console.Write(contb);
+      cont++;
+    }
+  }
+}
