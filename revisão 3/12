@@ -1,0 +1,10 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    string[] tamanho = frase.Split();
+    int soma = tamanho.Length;
+    Console.WriteLine(soma);
+  }
+}
