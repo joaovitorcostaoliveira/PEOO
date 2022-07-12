@@ -1,0 +1,20 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    string[] b = frase.Split();
+    int cont = 0;
+    int x = b.Length;
+    int x;
+    int y;
+    int z;
+    while(cont < x){
+      x = b[cont].Length;
+      y = x-2;
+      z = x-1;
+      Console.Write(b[cont].Substring(x-1));
+      cont++;
+    }
+  }
+}
