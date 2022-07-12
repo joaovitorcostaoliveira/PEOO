@@ -1,0 +1,16 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    int b = frase.Length;
+    int cont = 1;
+    string louco;
+    while(i <= x){
+      louco = frase.Substring(1) + frase.Substring(0, 1);
+      frase = louco;
+      Console.WriteLine(frase);
+      cont++;
+    }
+  }
+}
