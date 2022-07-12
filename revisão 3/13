@@ -1,0 +1,16 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    int tamanho = frase.Length;
+    int cont = 1;
+    string segundo = "";
+    while(tamanho >= cont){
+      segundo += frase.Substring(tamanho-1);
+      frase = frase.Remove(tamanho-1);
+      tamanho--;
+    }
+    Console.WriteLine(segundo);
+  }
+}
