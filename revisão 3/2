@@ -1,0 +1,10 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    int cont = 10;
+    while(cont >= 1){
+      Console.WriteLine(cont);
+      cont--;
+    }
+  }
+}
