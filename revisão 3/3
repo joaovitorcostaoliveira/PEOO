@@ -5,7 +5,7 @@ public class Program{
     while(cont <= 10){
       if(cont % 2 == 0) Console.Write($"-{cont} ");
       else Console.WriteLine(cont);
-      i++;
+      cont++;
     }
   }
 }
