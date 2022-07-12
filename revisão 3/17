@@ -1,0 +1,23 @@
+using System;
+class Program {
+  public static void Main() {
+    Console.WriteLine("Digite Uma Frase:");
+    string frase = Console.ReadLine();
+    string [] irado = frase.Split();
+    foreach(string legal in irado){
+      int soma = 0;
+      int cont = 0;
+      while(cont < legal.Length){
+        if(legal[cont] == 'a' || legal[cont] == 'e' || legal[cont] == 'i' || legal[cont] == 'o' || legal[cont] == 'u'){
+          soma++;
+        }
+        cont++;
+      }
+      cont = 0;
+      while(cont < soma){
+        Console.WriteLine(legal);
+        cont++;
+      }
+    }
+  }
+}
