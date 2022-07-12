@@ -1,0 +1,23 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine();
+    int number = frase.Length;
+    int cont = 0;
+    int soma = 0;
+    while(cont < number){
+      if(frase[cont] == '1') soma += 1;
+      if(frase[cont] == '2') soma += 2;
+      if(frase[cont] == '3') soma += 3;
+      if(frase[cont] == '4') soma += 4;
+      if(frase[cont] == '5') soma += 5;
+      if(frase[cont] == '6') soma += 6;
+      if(frase[cont] == '7') soma += 7;
+      if(frase[cont] == '8') soma += 8;
+      if(frase[cont] == '9') soma += 9;
+      cont++;
+    }
+    Console.WriteLine(soma);
+  }
+}
