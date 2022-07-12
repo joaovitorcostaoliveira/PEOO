@@ -1,0 +1,14 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    int contA = 1;
+    int contB = 1;
+    Console.WriteLine("1");
+    while(contA + contB <= 46){
+      Console.WriteLine(contA + contB);
+      contB = contB + contA;
+      contA++;
+    }
+    Console.WriteLine();
+  }
+}
