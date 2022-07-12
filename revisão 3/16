@@ -1,0 +1,27 @@
+using System;
+public class Program{
+  public static void Main(string[] args){
+    Console.WriteLine("Digite uma frase:");
+    string frase = Console.ReadLine().ToLower();
+    int tamanho = frase.Length;
+    int cont = 0;
+    int somaA = 0;
+    int somaE = 0;
+    int somaI = 0;
+    int somaO = 0;
+    int somaU = 0;
+    while(cont < tamanho){
+      if(frase[cont] == 'a') somaA++;
+      if(frase[cont] == 'e') somaE++;
+      if(frase[cont] == 'i') somaI++;
+      if(frase[cont] == 'o') somaO++;
+      if(frase[cont] == 'u') somaU++;
+      cont++;
+    }
+    Console.WriteLine($"A - {somaA}");
+    Console.WriteLine($"E - {somaE}");
+    Console.WriteLine($"I - {somaI}");
+    Console.WriteLine($"O - {somaO}");
+    Console.WriteLine($"U - {somaU}");
+  }
+}
